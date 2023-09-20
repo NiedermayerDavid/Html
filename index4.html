@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form és input elemek</title>
+    <style>
+        label, textarea{
+            display: block;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!-- textarea -->
+        <h2>Textarea</h2>
+        <form action="example.php" method="get">
+            <div>
+                <label for="userMessage">Message</label>
+                <!-- <br> -->
+                <textarea name="userMessage" id="userMessage" cols="30" rows="10"></textarea>
+            </div>
+
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Select option</h2>
+        <form action="select.php" method="post">
+            <div>
+                <label for="progLang"> Programming Languages</label>
+                <select name="progLang" id="progLang">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Java">Java</option>
+                    <option value="Dart">Dart</option>
+                    <option value="C++">C++</option>
+
+                </select>
+               
+               
+            
+            </div>
+            <br>
+            <div>
+                <label for="language">Web and mobile programming languages</label>
+                <select name="selectedlanguage" id="language">
+                    <optgroup label="web languages">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">php</option>
+                    </optgroup>
+                    <optgroup label="mobile languages">
+                        <option value="c#">c#</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <input type="submit" name="submit" id="submit" value="submit">
+
+        </form>
+        <br>
+    </section>
+    <br>
+    <section>
+        <h2>Input Radio buttons</h2>
+        <label for="red">
+
+            <input type="radio" 
+            name="color" 
+            id="red"
+            value="red">
+
+        
+        Red
+        </label>
+        <label for="green">
+
+            <input type="radio" 
+            name="color" 
+            id="green"
+            value="green">
+
+        
+        Green
+        </label>
+        <label for="blue">
+
+            <input type="radio" 
+            name="color" 
+            id="blue"
+            value="blue">
+
+        
+        Blue
+        </label>
+    </section>
+    <br>
+    <section>
+        <h2>Input checkbox - Food</h2>
+        <form action="checkbox.php" method="post">
+            <div>
+                <label for="hamburger">
+                    <input type="checkbox" name="food" value="hamburger" id="hamburger">
+                    Hamburger
+                </label>
+                <label for="gyros">
+                    <input type="checkbox" name="food" value="gyros" id="gyros">
+                    Gyros
+                </label>
+                <label for="goulasch">
+                    <input type="checkbox" name="food" value="goulasch" id="goulasch">
+                    Goulasch
+                </label>
+                <label for="chicken">
+                    <input type="checkbox" name="food" value="chicken" id="chicken">
+                    Chicken
+                </label>
+                <br>
+                <label for="menu">
+                    <input type="file" name="menu"   id="menu">
+                </label>
+
+                <br>
+                <input type="submit" name="submit" value="submit">
+
+            </div>
+
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+</body>
+</html>

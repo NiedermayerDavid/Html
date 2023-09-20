@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázatok, űrlapok input elemek</title>
+    <style>
+        table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        th,td{
+            padding: 5px;
+        }
+        /* tr{
+            border: 1px solid black;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Tables
+        -tr: Table row
+        -th: table heading
+        -td: table data
+     -->
+    <section>
+       <h2>Employee table</h2> 
+       <table>
+            <tr>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Years of exp.</th>
+                <th colspan="2">Phone number</th>
+
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td rowspan="3">Web Designer</td>
+                <td>3</td>
+                <td>987-654-321</td>
+                <td>123-456-789</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>5</td>
+                <td rowspan="2">111-222-333</td>
+                <td>444-555-666</td>
+            </tr>
+            <tr>
+                <td>Johnny Doe</td>              
+                <td>8</td>              
+                <td>777-888-999</td>
+            </tr>
+        </table>
+    </section>
+    <br /> <br />
+
+    <!-- 
+        form: űrlap
+        -Tartalmazza az input mezőket
+        -action attributu,: hova küldjük a beviteli mezőkbe beírt adatokat
+        -method attributum: GET/POST
+     -->
+    <section>
+        <form action="signup.php" method="post" style="width: 50%">
+            <fieldset>
+                <legend>Sign up form</legend>>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" />
+                </div>
+                <br>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" />
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <br>
+                <input type="submit" name="submit" value="submit">
+            </fieldset>
+                <!-- Form + input gyakorlás: küld el a két kedvenc állat fajtád a szerver felé
+                    -hozz létre űrlapot
+                    -küld el az adatot az example.php oldalára oldalra biztonságos módón
+                    -hozz létre 2 beviteli mezőt
+                    -a küldőtt adathoz tartozó nevek: favAnimal1, favAnimal2
+                    -küld el az adatot
+
+                    CTRL + D = kijelöli a kövi ugyan olyan szöveget HASZNOS !!!!
+                 -->
+            <br>
+                <section>
+                    <h2>Animals form</h2>
+                    <form action="example.php" method="post">
+                        <fieldset>
+                            <legend>kedvenc állat</legend>
+                            <div>
+                                <label for="favAnimal1">Kedvenc állat 1</label>
+                                <input type="text" name="favAnimal1" id="favAnimal1">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="favAnimal2">Kedvenc állat 2</label>
+                                <input type="text" name="favAnimal2" id="favAnimal2">
+                            </div>
+                            <br>
+                            <input type="submit" name="submit" id="submit">
+                        </fieldset>
+                
+                    </form>
+                
+                </section>
+        </form>
+    </section>
+</body>
+</html>

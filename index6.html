@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <form action="order.php" method="post">
+        <section>
+        
+        
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <br>
+                
+        
+        </section>
+        <br>
+        <section>
+        
+        
+            <h2>Italok</h2>
+            <label for="Water">
+            <input type="radio" name="drink" id="Water" value="Water">
+            Water</label><br>
+            <label for="Cola">
+            <input type="radio" name="drink" id="Cola" value="Cola">
+            Cola</label><br>
+            <label for="Sprite">
+            <input type="radio" name="drink" id="Sprite" value="Sprite">
+            Sprite</label><br>
+            <label for="Fanta">
+            <input type="radio" name="drink" id="Fanta" value="Fanta">
+            Fanta</label><br>
+            <br>
+            <h2>Előételek</h2>
+            <select name="selectedprefood" id="appetizer" multiple>
+                <optgroup label="Hideg Előételek">
+                    <option value="Sajtos golyó">Sajtos golyó</option>
+                    <option value="Klasszikus bruschetta">Klasszikus bruschetta</option>
+                    <option value="Klasszik svéd gombasaláta">Klasszik svéd gombasaláta</option>
+                </optgroup>
+                <optgroup label="Meleg Előételek">
+                    <option value="Tejszínes sóskakrém">Tejszínes sóskakrém</option>
+                    <option value="Klasszikus francia omlett">Klasszikus francia omlett</option>
+                    <option value="Zöldborsóleves vajas galuskával">Zöldborsóleves vajas galuskával</option>
+                </optgroup>
+            </select>
+            <section>
+                <h2>Főételek:</h2>
+                        <label for="CSIRKEMELLPAPRIKÁS">
+                            <input type="checkbox" name="food" value="CSIRKEMELLPAPRIKÁS" id="CSIRKEMELLPAPRIKÁS">
+                            CSIRKEMELLPAPRIKÁS
+                        </label><br>
+                        <label for="MÁTRAI BORZASKA">
+                            <input type="checkbox" name="food" value="MÁTRAI BORZASKA" id="MÁTRAI BORZASKA">
+                            MÁTRAI BORZASKA
+                        </label><br>
+                        <label for="MUSTÁROS-ZÖLDFŰSZERES KARAJ">
+                            <input type="checkbox" name="food" value="MUSTÁROS-ZÖLDFŰSZERES KARAJ" id="MUSTÁROS-ZÖLDFŰSZERES KARAJ">
+                            MUSTÁROS-ZÖLDFŰSZERES KARAJ
+                        </label><br>
+                        <label for="PULLED PORK">
+                            <input type="checkbox" name="food" value="PULLED PORK" id="PULLED PORK">
+                            PULLED PORK
+                        </label><br>
+            </section>
+            <section>
+                <h2>Desszertek</h2>
+                <label for="MEGGYES EGYENSÚLYTÉSZTA">
+                    <input type="radio" name="Desszertek" id="MEGGYES EGYENSÚLYTÉSZTA" value="MEGGYES EGYENSÚLYTÉSZTA">
+                    MEGGYES EGYENSÚLYTÉSZTA</label><br>
+                <label for="KÖRTÉS-PUDINGOS PITE">
+                    <input type="radio" name="Desszertek" id="KÖRTÉS-PUDINGOS PITE" value="KÖRTÉS-PUDINGOS PITE">
+                    KÖRTÉS-PUDINGOS PITE</label><br>
+                <label for="CSOKIS MUFFIN">
+                    <input type="radio" name="Desszertek" id="CSOKIS MUFFIN" value="CSOKIS MUFFIN">
+                    CSOKIS MUFFIN</label><br>
+            </section>
+            <br>
+            <section>
+                
+                <label for="userMessage">Véleményed rólunk:</label>
+                <br>
+                <textarea name="userMessage" id="userMessage" cols="30" rows="10"></textarea>
+            </section>
+            <br>
+            <label for="submit">Rendelés leadása
+            <input type="submit" name="submit" value="submit">
+            </label>
+
+    </form>
+
+
+    </section>
+
+
+    
+</body>
+</html>

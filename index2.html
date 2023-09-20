@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Bevezetés</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Címsor 1</h1>
+    <h2>Címsor 2</h2>
+    <p>Ez egy paragrafus</p>
+
+    <!-- Példa komment ctrl + k + c / ctrl + ü -->
+    <div>
+      <h1>Címsor 1</h1>
+      <h2>Címsor 2</h2>
+      <p>Ez egy paragrafus</p>
+    </div>
+
+    <!--Rendezett listák: ol > li -->
+    <ol start="100" type="I" reversed>
+      <li>Álmos</li>
+      <li>Előd</li>
+      <li>Ond</li>
+    </ol>
+
+    <!-- Rendezett listák: ul > li -->
+    <!-- Attribútumok: 2 fajta
+      -General
+      -Specific
+      A gyermek elem megörökli a szűlő tulajdonságait
+    -->
+
+    <div style="color: cornflowerblue;">
+      <h3>Bevásárló lista</h3>
+      <ul type="circle" style="color: blue">
+        <li>Tej</li>
+        <li>Sajt</li>
+        <li>Sonka</li>
+      </ul>
+    </div>
+
+    <!-- 
+
+       módosítsd a fenti rendezetlen listát a kovetkező szerint:
+       -legyen minden a lista elem "lyukas karika"
+       -legyen minden lista elem színe kék
+     -->
+
+    <div>
+      <h3>Linkek</h3>
+      <a href="http://www.google.hu">Ugrás a google-ra</a>
+      <a href="http://www.youtube.hu">Ugrás a Youtube-ra</a>
+    </div>
+
+    <!-- Sortörés -->
+    <br />
+    <!-- Block vs inline element
+      block(h1-h6, p, div, ul, li):
+      - felveszi a szülő elem teljes szélességét
+      -megtöri a sort
+
+      inline:(a, span)
+      -csak akkora szélességet vesz fel, amekkora a tartalom
+      -nem töri meg a sort
+    -->
+    <div style="border: 1px solid black; width: 50%">
+      <h4 style="border: 1px solid red">Block elem 1</h4>
+      <h4 style="border: 1px solid red">Block elem 2</h4>
+      <span> ez a szoveg</span> <span> nem tori meg a sort</span>
+    </div>
+
+    <!-- készíts megfelelő html elemeket a struktúra szerint:
+      - doboz szülő elemen belül:
+    - 3 inline
+    - 1 block elem
+    - 2 inline elem
+    - sortörés
+    - 1 block elem
+    -->
+    <br />
+
+    <div style="background-color: silver; width: 8%;">
+      <span style="color: red;">a</span> <span style="color: white;">aa</span> <span style="color: red;">aaa</span>
+
+      <h5 style="color: white;">Linkek</h5>
+      <a href="http://www.pinterest.com" style="color: red;">pinterest</a>
+      <a href="http://www.youtube.hu" style="color: white;">youtube</a>
+
+      <br />
+
+      <ul>
+        <li style="color: red;">prios</li>
+        <li style="color: white;">fehér</li>
+      </ul>
+    </div>
+  </body>
+</html>
