@@ -1,0 +1,95 @@
+/* Universal Selector --> Selects every element
+    Reference: https://www.w3schools.com/cssref/css_selectors.php
+ 
+    General Selectors
+ 
+    Don't use the * selector!
+    * {
+        font-size: 24px;
+    }
+*/
+
+html,
+body {
+    font-size: 20px;
+}
+
+/* Selects every "p" element inside a div */
+/* Selects all p where div is a parent */
+div p {
+    color: crimson;
+}
+
+/*  Selects all "b" and all "u" elements */
+b,
+u {
+    color: darkorange;
+}
+
+/* Specific Selectors: .class, #id */
+.important {
+    color: red;
+}
+
+.dotted {
+    border: 2px dotted #ccc;
+}
+
+#spec {
+    color: blue !important;
+}
+
+/* Pseudo classes
+    Note: The order of pseudoclasses are important!
+*/
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: black;
+}
+
+.actor {
+    border: 2px solid #ccc;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 50%;
+    margin-left: 20px;
+    float: inline-start;
+}
+.act-text{
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+}
+.zeneszkep{
+    border: 2px solid #ccc;
+        width: 200px;
+        height: auto;
+        padding: 20px;
+        border-radius: 50%;
+    height: auto;
+    width: 300px;
+    
+}
+.asddsa{
+    display: flex;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+.undertext{
+    padding-left: 125px;
+    padding-right: 140px;
+}

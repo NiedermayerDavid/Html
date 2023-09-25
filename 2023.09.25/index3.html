@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+
+</head>
+<body>
+        <!-- General Selection via CSS -->
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid sunt, consequatur, porro totam
+                consequuntur velit dolor ab rerum nemo eius. Quas dolorem ex dolores aperiam, laudantium atque odio? In.
+            </p>
+        </div>
+        
+        <p>Lorem ipsum 2</p>
+        <b>Bold text</b>
+        <u>Underlined text</u>
+        <br />
+        
+        <!-- Specific Selection -->
+        <p class="important">Important content goes here!</p>
+        <p class="dotted">Bordered content goes here</p>
+        <p class="important dotted">Important and bordered content goes here</p>
+        <p style="color: green" id="spec">
+            CSS Hierarchy Specified Element
+        </p>
+        <br />
+        <br />
+        
+        <!-- Specific selection with pseudo classes -->
+        <a href="http://example1.com" target="_blank">Example 1</a>
+        <a href="http://example2.com" target="_blank">Example 2</a>
+        <a href="http://example3.com" target="_blank">Example 3</a>
+        <a href="http://example4.com" target="_blank">Example 4</a>
+        <br /><br />
+        <hr />
+        <!-- Gyakorló feladat:
+                    "Színész" felsoroló
+                    - Hozz létre egy section elemet, amelyben négy div gyermek elem van
+                    - Mind a 4 div elemben legyen egy kép elhelyezve
+                    - Mindegyik kép MELLETT legyen róluk leírás (inline vs block)
+                    - A képek formázása (CSS kódban)
+                        - 2px szegély, egyenletes, szürke
+                        - width: 200px, height: auto
+                    A képek a kedvenc színészeid ábrázolják, a leírás pedig
+                    róluk tartalmazzon információt. A leírásban legyen egy link, amely
+                    a színész wikipedia oldalára mutat.
+                -->
+        
+        <section >
+            <div>
+                <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Johnny_Depp_2020.jpg"
+                    alt="Johnny Depp" />
+                <span class="act-text">John Christopher Depp II (born June 9, 1963) is an American actor and musician. He is the recipient
+                    of multiple accolades, including a Golden Globe Award and a Screen Actors Guild Award, and has been
+                    nominated for three Academy Awards and two BAFTA awards. See more on
+                    <a href="https://en.wikipedia.org/wiki/Johnny_Depp">wikipedia</a>
+                </span>
+            </div>
+            <div>
+                <img class="actor"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/440px-Tom_Cruise_by_Gage_Skidmore_2.jpg"
+                    alt="Tom Cruise" />
+                <span class="act-text">Thomas Cruise Mapother IV (born July 3, 1962), known professionally as Tom Cruise, is an American
+                    actor. One of the world's highest-paid actors,[1] he has received various accolades, including an
+                    Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for four Academy
+                    Awards. His films have grossed over $4 billion in North America and over $11.5 billion worldwide,[2]
+                    making him one of the highest-grossing box-office stars of all time. See more on
+                    <a href="https://en.wikipedia.org/wiki/Tom_Cruise">wikipedia</a>
+                </span>
+
+            </div>
+
+            <div>
+                <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Leonardo_Dicaprio_Cannes_2019.jpg/220px-Leonardo_Dicaprio_Cannes_2019.jpg" alt="Leonardo DiCaprio">
+                <span class="act-text">
+                    Leonardo Wilhelm DiCaprio (/diˈkæprioʊ/, /dɪ-/; Italian: [diˈkaːprjo]; born November 11, 1974) is an American actor and
+                    film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including
+                    an Academy Award, a British Academy Film Award and three Golden Globe Awards. As of 2019, his films have grossed over
+                    $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.
+                    <a href="https://en.wikipedia.org/wiki/Leonardo_DiCaprio">wikipedia</a>
+                </span>
+
+            </div>
+            <div>
+                <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Morgan_Freeman_at_The_Pentagon_on_2_August_2023_-_230802-D-PM193-3363_%28cropped%29.jpg/220px-Morgan_Freeman_at_The_Pentagon_on_2_August_2023_-_230802-D-PM193-3363_%28cropped%29.jpg" alt="Morgan Freeman">
+                <span class="act-text">
+                    Morgan Freeman[2] (born June 1, 1937) is an American actor and producer. He is known for his distinctive deep voice and
+                    various roles in a wide variety of film genres. Throughout his career spanning over five decades, he has received
+                    numerous accolades, including an Academy Award, a Screen Actors Guild Award, and a Golden Globe Award. He is the
+                    recipient of the Kennedy Center Honor in 2008, the AFI Life Achievement Award in 2011, the Cecil B. DeMille Award in
+                    2012, and the Screen Actors Guild Life Achievement Award in 2018.
+                    <a href="https://en.wikipedia.org/wiki/Morgan_Freeman">wikipedia</a>
+                </span>
+            </div>
+        </section>
+    
+        <section class="asddsa">
+            <img class="zeneszkep " src="https://starity.hu/images/celebs/years/16626/800x600/2011.jpg" alt="Ed Sheeran">
+            
+            <img class="zeneszkep"  src="https://starity.hu/images/celebs/200x300/drake-12161576528163801.jpg" alt="Drake">
+            
+            <img class="zeneszkep" src="https://starity.hu/images/celebs/200x300/ariana-grande-042416507795231016.jpg" alt="Ariana Grande">
+            <img class="zeneszkep" src="https://rukminim1.flixcart.com/image/300/300/poster/x/p/v/athah-eminem-not-afraid-poster-athedabsku0132-medium-original-imae78zuyfujfkhn.jpeg" alt="Eminem">
+            
+
+        </section>
+        <span >
+            <a class="undertext" href="https://en.wikipedia.org/wiki/Ed_Sheeran" target="_blank" rel="noopener noreferrer"> Wikipedia</a>
+            <a class="undertext" href="https://en.wikipedia.org/wiki/Drake_(musician)" target="_blank" rel="noopener noreferrer"> Wikipedia</a>
+            <a class="undertext" href="https://hu.wikipedia.org/wiki/Ariana_Grande" target="_blank" rel="noopener noreferrer"> Wikipedia</a>
+            <a class="undertext" href="https://hu.wikipedia.org/wiki/Eminem" target="_blank" rel="noopener noreferrer"> Wikipedia</a>
+        </span>
+</body>
+</html>
