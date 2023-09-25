@@ -1,0 +1,44 @@
+/* 
+* == bad bad no use 
+*{
+    font-size: 24px;
+}
+ */
+ head, body{
+    font-size: 20px;
+ }
+ /* kiválaszt minden p elemet egy diven belül 
+ selects all p where div is a parent */
+div p{
+    color: crimson;
+ }
+ /* selects all b and u element */
+ b,u{
+    color: orange;
+ }
+ /* specific selectors: .class, #id */
+ .important{
+    color: red;
+ }
+ .dotted{
+    border: 2px dotted #ccc;
+ }
+ #spec{
+    color: blue !important; 
+ }
+ /* speudo classes
+    note: order of pseudo classes are important */
+ a:link{
+    color: orange;
+ }
+ a:visited{
+    color: red;
+ }
+ a:hover {
+    color: yellow;
+
+
+ }
+ a:active{
+    color: black;
+ }
