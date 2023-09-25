@@ -28,6 +28,7 @@ div p{
  }
  /* speudo classes
     note: order of pseudo classes are important */
+ /* 
  a:link{
     color: orange;
  }
@@ -41,4 +42,10 @@ div p{
  }
  a:active{
     color: black;
- }
+ } 
+ */
+img{
+   border: 2px solid #ccc;
+   width: 200px;
+   height: auto;
+}
