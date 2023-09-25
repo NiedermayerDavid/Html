@@ -6,3 +6,37 @@ html, body{
     padding: 0;
     font-weight: 300;
 }
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-transform: uppercase;
+    display: flex;
+    
+
+
+}
+.blue {
+    border: 1px solid blue;
+    color: blue;
+    background-color: #fff;
+}
+.blue:hover{
+    background-color: blue;
+    color: #fff;
+}
+.red {
+    border: 1px solid red;
+    color: red;
+    background-color: #fff;
+}
+
+.red:hover {
+    background-color: red;
+    color: #fff;
+}
+.btn-text{
+    margin: 4px;
+    
+
+}
