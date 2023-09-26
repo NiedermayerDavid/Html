@@ -1,0 +1,31 @@
+
+img{
+    width: 500px;
+    height: auto;
+    
+}
+body{
+    text-align: center;
+}
+label{
+    padding-right: 5%;
+    
+}
+/* label {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+} */
+
+section {
+    text-align: center;
+}
+textarea{
+    vertical-align: top;
+}
+.message{
+    vertical-align: top;
+}
+select{
+    width: 100px;
+}

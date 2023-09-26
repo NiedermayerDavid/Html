@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style2.css ">
+</head>
+<body>
+        <img src="Képernyőkép 2023-09-26 105549.png" alt="Contact">
+        <br>
+    <form action="order.php" method="post">
+        <section>
+            <div>
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <br>
+            <div>
+
+            <label for="choose">How did you find us?</label>
+            <select name="choose" id="choose">
+                
+                    <option value="family">Family</option>
+                    <option value="Friend">Friends</option>
+                    <option value="From Ads">From Ads</option>
+            </select>
+            </div><br>
+            <div>
+                <label for="Newsletter">Newsletter?</label>
+                        <input type="checkbox" name="food" value="Newsletter" id="Newsletter">
+                        <span>Yes,please</span>
+                
+
+            </div>
+            <br>
+            <div>
+                <label   for="userMessage">Drop us a line!</label>
+                <!-- <br> -->
+                <textarea name="userMessage" id="userMessage" cols="20" rows="4">Your message</textarea>
+                
+            </div>
+            <br>
+            <input style="border-radius: 25%; background-color: orange; color: white; height: 30px; width: 60px; font-size: 15px;" type="submit" value="Send it">
+
+
+        </section>
+    </form>
+
+</body>
+</html>
