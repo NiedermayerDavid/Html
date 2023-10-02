@@ -1,0 +1,159 @@
+/****************************
+          DEFAULT
+*****************************/
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/****************************
+          HEADER
+*****************************/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("./road.jpg");
+    /* 100vh = 100 viewheight, az elérhető képernyő teljes magassága */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+}
+
+.main-nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.main-nav li a {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    font-size: 90%;
+    padding: 7px 0;
+    text-decoration: none;
+    transition: 0.25s;
+
+    /*90% betumeret, 2px also border atlatszo, padding, nincs alahuzas  */
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    /* border-2px also szegely sarga szinure valtozik */
+    border-bottom: 2px solid #e67e23;
+    transition: 0.25s;
+}
+
+/****************************
+          HERO-BOX
+*****************************/
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 260%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    /* 
+    - fehér színű
+    - nagybetus
+    - betuvastagsag 300
+    - font-size 260%
+    */
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 15px 30px;
+    border-radius: 200px;
+    transition: 0.2s;
+    /* 
+    - display: inline-block szintu
+    - nincs alahuzas
+    - betuvastagsag 300
+    - padding felul es alul: 15px
+    - padding bal es jobb oldalon: 30px
+    - szegely lekerekites: 200px
+    - transition .2s
+    */
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e23;
+    border-color: #e67e23;
+    color: white;
+    margin-right: 15px;
+    /* 
+    BAL OLDALI GOMB, ALAPBOL SARGAN (#e67e23) KITOLTVE, SARGA BORDER ES FEHER SZOVEGGEL
+    */
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    background-color: transparent;
+    color: orange;
+    border: 1px solid #e67e23;
+    /* 
+    JOBB OLDALI GOMB, ALAPBOL NINCS KITOLTVE, SARGA SZEGELLYEL ES SZOVEGGEL
+    */
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fa7d19;
+    border-color: #fa7d19;
+    /* 
+    MINDKET GOMB, HATTERSZIN ES SZEGELY SZIN #fa7d19 
+    */
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    color: white;
+    /* 
+    JOBB OLDALI GOMB,FEHER SZOVEG
+    */
+}
+
+/****************************
+ RESPONSIBILITY - media query
+*****************************/
+
+@media screen and (max-width: 685px) {
+    .hero-text-box {
+        font-size: 70%;
+    }
+
+    .main-nav {
+        font-size: 70%;
+    }
+}
